@@ -82,6 +82,12 @@ jpeg("comments.jpeg")
 boxplot(df3$session_comments_given, "Average number of comments given by each customer")
 dev.off()
 
+#### Correlation
+cor.test(x = df3$session_duration_min, y = df3$session_projects_added)
+cor.test(x = df3$session_duration_min, y = df3$session_likes_given)
+
+# Small p-values; reject null hypotheses; Strong correlation between session duration, and projects and likes.
+
 
 
 
